@@ -9,43 +9,39 @@ body {
 header {
     background-color: #007bff;
     color: #fff;
-    padding: 0.5rem;  /* Reduced padding */
+    padding: 1rem;
     text-align: center;
-    display: flex;  /* Use flexbox */
-    align-items: center; /* Vertically center items */
-    justify-content: space-between; /* Space the logo/title and nav */
-    height: 100px; /* Fixed header height */
+    position: relative;  /* Make the header a positioning context for absolute elements */
 }
 
 /* Style the logo container */
 .logo-container {
-    display: flex;
-    align-items: center;
+    position: relative; /* To contain the absolutely positioned logo */
+    display: flex;  /* Use flexbox to arrange logo and title */
+    align-items: left;  /* Vertically align items */
+    justify-content: left; /* Center the content */
 }
 
 /* Style the logo image */
 .logo-container img {
-    height: 80px; /* Adjust the logo size */
-    width: auto;
-    margin-right: 10px; /* Space between logo and title */
+    position: absolute; /* Absolutely position the logo */
+    top: 10px; /* Adjust the top position */
+    left: 10px; /* Adjust the left position */
+    width: 150px; /* Adjust the logo size as needed */
+    height: auto; /* Maintain aspect ratio */
+    /* margin-right: 10px;  Remove this if you don't need it */
 }
 
 /* Style the heading */
 header h1 {
-    margin: 0;
-    font-size: 1.5em;  /* Adjust font size as needed */
-}
-
-/* Style the nav */
-header nav {
-    flex-grow: 1; /* Let nav take up remaining space */
-    text-align: right;  /* Align nav items to the right */
+    margin: 0; /* Remove default heading margin */
+    font-size: 1.5em; /* Adjust the heading size as needed */
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 0.5rem;
+    margin: 0 1rem;
 }
 
 section {
