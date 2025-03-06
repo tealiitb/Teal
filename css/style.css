@@ -13,6 +13,26 @@ header {
     text-align: center;
 }
 
+/* Style the logo container */
+.logo-container {
+    display: flex;          /* Use flexbox for layout */
+    align-items: center;    /* Vertically align items */
+    justify-content: center; /* Horizontally center items */
+}
+
+/* Style the logo image */
+.logo-container img {
+    width: 50px;        /* Adjust the logo size as needed */
+    height: auto;       /* Maintain aspect ratio */
+    margin-right: 10px;  /* Add some spacing between the logo and the heading */
+}
+
+/* Style the heading */
+header h1 {
+    margin: 0;           /* Remove default heading margin */
+    font-size: 1.5em;    /* Adjust the heading size as needed */
+}
+
 nav a {
     color: #fff;
     text-decoration: none;
