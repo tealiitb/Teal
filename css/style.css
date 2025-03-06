@@ -14,8 +14,18 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    height: 150px;  /* <--- CHANGE THIS VALUE */
+    box-sizing: border-box;
+}
+
+/* Style the logo image */
+.logo-container img {
+    height: 150px;      /* Set your desired logo height */
+    width: auto;       /* Maintain aspect ratio */
+    max-width: 100%;   /* Ensure the image doesn't overflow its container */
+    object-fit: contain; /* Ensure the entire image is visible and maintains aspect ratio */
+    margin-left: 0;     /* Remove any left margin */
+    padding-left: 0;    /* Remove any left padding */
 }
 
 /* Style the logo container */
@@ -23,14 +33,7 @@ header {
     display: flex;
     align-items: center;
     max-width: 40%; /* Limit width to 40% of the header */
-}
-
-/* Style the logo image */
-.logo-container img {
-    height: 80px;
-    width: auto;
-    max-width: 100%; /* Ensure the image doesn't overflow its container */
-    object-fit: contain; /* Ensure the entire image is visible and maintains aspect ratio */
+    padding-left: 0px;
 }
 
 /* Style the heading */
