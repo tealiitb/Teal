@@ -9,39 +9,50 @@ body {
 header {
     background-color: #007bff;
     color: #fff;
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: center;
-    position: relative;  /* Make the header a positioning context for absolute elements */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 /* Style the logo container */
 .logo-container {
-    position: relative; /* To contain the absolutely positioned logo */
-    display: flex;  /* Use flexbox to arrange logo and title */
-    align-items: center;  /* Vertically align items */
-    justify-content: center; /* Center the content */
+    display: flex;
+    align-items: center;
+    max-width: 40%; /* Limit width to 40% of the header */
 }
 
 /* Style the logo image */
 .logo-container img {
-    position: absolute; /* Absolutely position the logo */
-    top: 10px; /* Adjust the top position */
-    left: 10px; /* Adjust the left position */
-    width: 50px; /* Adjust the logo size as needed */
-    height: auto; /* Maintain aspect ratio */
-    /* margin-right: 10px;  Remove this if you don't need it */
+    height: 80px;
+    width: auto;
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+    object-fit: contain; /* Ensure the entire image is visible and maintains aspect ratio */
 }
 
 /* Style the heading */
 header h1 {
-    margin: 0; /* Remove default heading margin */
-    font-size: 1.5em; /* Adjust the heading size as needed */
+    margin: 0;
+    font-size: 1.5em;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;       /* Hide any overflowing text */
+    text-overflow: ellipsis; /* Show an ellipsis (...) if text overflows */
 }
 
-nav a {
+/* Style the nav */
+.main-nav {
+    flex-grow: 1;
+    text-align: right;
+    white-space: nowrap; /* Keep nav links on one line */
+}
+
+.main-nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
 }
 
 section {
