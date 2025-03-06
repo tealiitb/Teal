@@ -18,8 +18,8 @@ header {
 .logo-container {
     position: relative; /* To contain the absolutely positioned logo */
     display: flex;  /* Use flexbox to arrange logo and title */
-    align-items: left;  /* Vertically align items */
-    justify-content: left; /* Center the content */
+    align-items: center;  /* Vertically align items */
+    justify-content: center; /* Center the content */
 }
 
 /* Style the logo image */
@@ -27,7 +27,7 @@ header {
     position: absolute; /* Absolutely position the logo */
     top: 10px; /* Adjust the top position */
     left: 10px; /* Adjust the left position */
-    width: 150px; /* Adjust the logo size as needed */
+    width: 50px; /* Adjust the logo size as needed */
     height: auto; /* Maintain aspect ratio */
     /* margin-right: 10px;  Remove this if you don't need it */
 }
