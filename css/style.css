@@ -9,39 +9,43 @@ body {
 header {
     background-color: #007bff;
     color: #fff;
-    padding: 1rem;
+    padding: 0.5rem;  /* Reduced padding */
     text-align: center;
-    position: relative;  /* Make the header a positioning context for absolute elements */
+    display: flex;  /* Use flexbox */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space the logo/title and nav */
+    height: 100px; /* Fixed header height */
 }
 
 /* Style the logo container */
 .logo-container {
-    position: relative; /* To contain the absolutely positioned logo */
-    display: flex;  /* Use flexbox to arrange logo and title */
-    align-items: left;  /* Vertically align items */
-    justify-content: left; /* Center the content */
+    display: flex;
+    align-items: center;
 }
 
 /* Style the logo image */
 .logo-container img {
-    position: absolute; /* Absolutely position the logo */
-    top: 10px; /* Adjust the top position */
-    left: 10px; /* Adjust the left position */
-    width: 150px; /* Adjust the logo size as needed */
-    height: auto; /* Maintain aspect ratio */
-    /* margin-right: 10px;  Remove this if you don't need it */
+    height: 80px; /* Adjust the logo size */
+    width: auto;
+    margin-right: 10px; /* Space between logo and title */
 }
 
 /* Style the heading */
 header h1 {
-    margin: 0; /* Remove default heading margin */
-    font-size: 1.5em; /* Adjust the heading size as needed */
+    margin: 0;
+    font-size: 1.5em;  /* Adjust font size as needed */
+}
+
+/* Style the nav */
+header nav {
+    flex-grow: 1; /* Let nav take up remaining space */
+    text-align: right;  /* Align nav items to the right */
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
 }
 
 section {
