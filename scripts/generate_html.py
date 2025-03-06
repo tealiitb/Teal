@@ -17,12 +17,17 @@ if __name__ == "__main__":
     template_dir = "templates"
     output_dir = "."  # Output to the root directory
     context = {
-        "title": "Teal Research Lab",
-        "lab_name": "Teal Research Lab"
+        "title": "TEAL Research Lab",
+        "lab_name": "TEAL Research Lab"
     }
 
+    # Generate main pages
     generate_html(template_dir, output_dir, "index.html", context)
     generate_html(template_dir, output_dir, "about.html", context)
     generate_html(template_dir, output_dir, "research.html", context)
-    generate_html(template_dir, output_dir, "workshop.html", context)
     generate_html(template_dir, output_dir, "contact.html", context)
+
+    # Generate additional research pages
+    generate_html(template_dir, output_dir, "publications.html", context)
+    generate_html(template_dir, output_dir, "projects.html", context)
+    generate_html(template_dir, output_dir, "students.html", context)

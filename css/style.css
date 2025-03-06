@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: sans-serif;
     margin: 0;
@@ -6,67 +7,281 @@ body {
     color: #333;
 }
 
+/* Header Styles */
 header {
     background-color: #007bff;
     color: #fff;
     padding: 0.5rem;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 150px;  /* <--- CHANGE THIS VALUE */
+    height: 150px; 
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
-/* Style the logo image */
-.logo-container img {
-    height: 150px;      /* Set your desired logo height */
-    width: auto;       /* Maintain aspect ratio */
-    max-width: 100%;   /* Ensure the image doesn't overflow its container */
-    object-fit: contain; /* Ensure the entire image is visible and maintains aspect ratio */
-    margin-left: 0;     /* Remove any left margin */
-    padding-left: 0;    /* Remove any left padding */
-}
-
-/* Style the logo container */
+/* Logo Container */
 .logo-container {
     display: flex;
     align-items: center;
-    max-width: 40%; /* Limit width to 40% of the header */
-    padding-left: 0px;
+    max-width: 40%;
+    padding-left: 10px;
 }
 
-/* Style the heading */
-header h1 {
-    margin: 0;
-    font-size: 1.5em;
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden;       /* Hide any overflowing text */
-    text-overflow: ellipsis; /* Show an ellipsis (...) if text overflows */
+.logo-container img {
+    height: 130px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
-/* Style the nav */
+/* Navigation Bar */
 .main-nav {
     flex-grow: 1;
-    text-align: right;
-    white-space: nowrap; /* Keep nav links on one line */
+    text-align: center;
 }
 
 .main-nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 0.5rem;
+    margin: 0 10px;
+    font-weight: bold;
 }
 
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section & Content Styling */
 section {
     padding: 2rem;
-    margin: 1rem;
+    margin: 1rem auto;
     background-color: #fff;
     border-radius: 5px;
+    max-width: 90%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
     background-color: #ddd;
+}
+
+/* Notification Banner */
+.notification-banner {
+    background-color: #ffcc00;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Navigation */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropbtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #0056b3;
+}
+
+/* Research Page Navigation */
+.research-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.research-links li {
+    margin: 10px 0;
+}
+
+.research-links a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.research-links a:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Publications Page Styling */
+.publication-section {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.publication-section h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* List styling for publications */
+.publication-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.publication-list li {
+    background: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+.publication-list li strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.publication-list li em {
+    font-style: italic;
+    color: #666;
+}
+
+.journal {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.doi-link {
+    color: #d9534f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.doi-link:hover {
+    text-decoration: underline;
+}
+
+/* Back to research link */
+.back-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-link a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .logo-container {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .logo-container img {
+        height: 100px;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: block;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .dropdown-content a {
+        padding: 10px;
+        display: inline-block;
+    }
 }

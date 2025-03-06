@@ -1,1 +1,1 @@
-LAB_NAME = "Teal Research Lab"
+LAB_NAME = "TEAL Research Lab"
