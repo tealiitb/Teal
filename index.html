@@ -8,25 +8,33 @@
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="css/logo.jpeg" alt="Teal Research Lab Logo">
+        <div class="header-left">
+            <div class="logo-container">
+                <img src="css/institute_logo.png" alt="Institute Logo">
+                <img src="css/logo.png" alt="Teal Research Lab Logo">
+
+            </div>
+            <div class="lab-title">
+                <span class="line1">Thermal Remote Sensing and Environmental</span><br>
+                <span class="line2">Applications Lab <strong>(TEAL)</strong></span>
+            </div>
         </div>
+
         <nav class="main-nav">
-            <h1>Teal Research Lab</h1>
             <div class="nav-links">
                 <a href="index.html">Home</a> |
                 <a href="about.html">About</a> |
-                
+
                 <!-- Research Dropdown Menu -->
                 <div class="dropdown">
-                    <button class="dropbtn">Research ▼</button>
+                    <a class="dropbtn">Research ▼</a>
                     <div class="dropdown-content">
                         <a href="publications.html">Publications</a>
                         <a href="students.html">Students</a>
                         <a href="projects.html">Projects</a>
                     </div>
                 </div>
-
+                |
                 <a href="contact.html">Contact</a>
             </div>
         </nav>
@@ -35,14 +43,86 @@
     <main>
         
 
-    <!-- Notification Banner -->
-    <div class="notification-banner">
-        <p><strong>Upcoming Event:</strong> Join us for the <em>Thermal Workshop</em> hosted by our lab on <strong>May 14-15, 2025</strong>. We invite participants to be a part of this exciting event. <br> <strong>Stay tuned for further updates!</strong></p>
-    </div>
+<!-- Notification Banner -->
+<div class="notification-banner">
+    <p><strong>Upcoming Event:</strong> Join us for the <em>Thermal Workshop</em> hosted by our lab on <strong>May 14-15, 2025</strong>. We invite participants to be a part of this exciting event. <br> <strong>Stay tuned for further updates!</strong></p>
+</div>
 
-    <h2>Welcome to Teal Research Lab</h2>
-    <p>Our mission statement and lab description go here.</p>
-    <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+<!-- Photo Collage Slider -->
+<div class="slideshow-container">
+    <div class="slide fade">
+        <img src="Images/DayTime_MODIS_Trend_5.png" class="slide-image">
+    </div>
+    <div class="slide fade">
+        <img src="Images/MODIS_Spatial_Plots.png" class="slide-image">
+    </div>
+    <div class="slide fade">
+        <img src="Images/STIC_ANN_LE_ScatterPlot_150.png" class="slide-image">
+    </div>
+    <div class="slide fade">
+        <img src="Images/StudyArea.png" class="slide-image">
+    </div>
+</div>
+
+<!-- About Us Section -->
+<section class="about-us">
+    <h2>About Us</h2>
+    <p>Teal Research Lab is a cutting-edge research facility located at the Indian Institute of Technology Bombay, Mumbai, Maharashtra, India.</p>
+    <p>The <strong>Thermal Remote Sensing and Environmental Applications Lab (TEAL)</strong> at the Department of Civil Engineering, IIT Bombay, is dedicated to advancing remote sensing technologies, primarily using thermal remote sensing data for hydrology, water resources, and environmental applications.</p>
+    <p>Our research focuses on:</p>
+    <ul>
+        <li>Evapotranspiration modeling</li>
+        <li>Drought monitoring</li>
+        <li>Soil moisture estimation</li>
+        <li>Land surface temperature modeling and downscaling</li>
+        <li>UAV-based applications in agriculture and water management</li>
+        <li>Gross Primary Production (GPP) estimation</li>
+    </ul>
+</section>
+
+<!-- Research Themes -->
+<section class="research-themes">
+    <h2>Research Themes</h2>
+    <div class="theme-container">
+        <div class="theme">
+            <img src="Images/Theme_image/Irrigation.png" alt="Research Theme 1">
+            <h3>Remote Sensing for Water Resources</h3>
+        </div>
+        <div class="theme">
+            <img src="Images/Theme_image/hydrological.png" alt="Research Theme 2">
+            <h3>Hydrological Modeling</h3>
+        </div>
+        <div class="theme">
+            <img src="Images/Theme_image/Climate_change.png" alt="Research Theme 3">
+            <h3>Climate Change and Environment</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Panel -->
+<section class="contact-panel">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> <a href="mailto:tealiitb@gmail.com">tealiitb@gmail.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/teal-iitbombay/" target="_blank">Teal IIT Bombay</a></p>
+    <p><strong>Address:</strong> Civil Engineering Department, Indian Institute of Technology Bombay, Mumbai, Maharashtra, India - 400076</p>
+</section>
+
+<!-- JavaScript for Improved Slideshow -->
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";  
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
 
 
     </main>
