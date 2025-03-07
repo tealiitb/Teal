@@ -1,95 +1,73 @@
 {% extends "base.html" %}
+{% block title %}Our Team - TEAL{% endblock %}
 {% block content %}
 
-<h2>Students Involved in Research</h2>
-
-<h3>Post-Docs</h3>
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Years</th>
-        <th>Research Area</th>
-    </tr>
-    <tr>
-        <td>Dr. Sanjeev Gadad</td>
-        <td>2019 to 2021</td>
-        <td>Analysis of satellite soil moisture products over India</td>
-    </tr>
-    <tr>
-        <td>Dr. Varsha Pandey</td>
-        <td>March 2022 onwards</td>
-        <td>GPP modelling over India</td>
-    </tr>
-</table>
-
-<h3>Ph.D. Students</h3>
-
-<h4>Ongoing</h4>
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Starting Date</th>
-        <th>Research Area</th>
-    </tr>
-    <tr>
-        <td>Kukku Sara P E</td>
-        <td>Jan 2019</td>
-        <td>Retrieval of LST at high spatiotemporal resolution through disaggregation and data fusion.</td>
-    </tr>
-    <tr>
-        <td>Athira K V</td>
-        <td>Jan 2019</td>
-        <td>Multimodel ensemble ET.</td>
-    </tr>
-    <tr>
-        <td>Sangeetharani M (SERB OVDF Fellow)</td>
-        <td>August 2019</td>
-        <td>Remote Sensing applications in agriculture.</td>
-    </tr>
-    <tr>
-        <td>Anusha Roy</td>
-        <td>Jan 2020</td>
-        <td>Remote sensing of urban areas.</td>
-    </tr>
-    <tr>
-        <td>Rahul Harod (PMRF Fellow)</td>
-        <td>Aug 2021</td>
-        <td>LST from passive microwave observations</td>
-    </tr>
-    <tr>
-        <td>Sakshi Harde</td>
-        <td>August 2021</td>
-        <td>Coupled modelling of ET and GPP.</td>
-    </tr>
-    <tr>
-        <td>Puja Tripathy</td>
-        <td>August 2021</td>
-        <td>IDPCS student co-supervised by Prof. Pennan Chinnasamy and Prof. RAAJ Ramsankaran - Sustainability of agriculture under climate change scenario.</td>
-    </tr>
-     <tr>
-        <td>Sanjay N C</td>
-        <td>Jan 2022</td>
-        <td>IITB Monash Academy student - Co-supervised with Prof. Jeff Walker, Monash University, Australia - Modelling evapotranspiration using passive microwave observations.</td>
-    </tr>
-     <tr>
-        <td>Pooja N</td>
-        <td>August 2022</td>
-        <td>Topic to be decided.</td>
-    </tr>
-    <tr>
-        <td>Atul Kaushik</td>
-        <td>August 2022</td>
-        <td>Topic to be decided.</td>
-    </tr>
-   <tr>
-        <td>Gautami Kharde</td>
-        <td>August 2022</td>
-        <td>IITB Monash Academy student - Co-supervised with Prof. Basudev Biswal, IITB and Prof. Edoardo Daly - Topic to be decided.</td>
-    </tr>
-
-</table>
-
-<!-- Back to Research Page -->
-<p><a href="research.html">← Back to Research</a></p>
+<section>
+    <h2>Our Team</h2>
+    
+    <h3>Principal Investigator</h3>
+    <div class="team-grid">
+        <div class="team-member">
+            <img src="../Images/faculty.jpg" alt="Faculty Name">
+            <div class="team-info">
+                <h3>Dr. Faculty Name</h3>
+                <p class="position">Associate Professor</p>
+                <p>Department of Civil Engineering, IIT Bombay</p>
+                <p><a href="mailto:faculty@iitb.ac.in">faculty@iitb.ac.in</a></p>
+                <p><a href="https://scholar.google.com/citations?user=XXXX" target="_blank">Google Scholar</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <h3>PhD Students</h3>
+    <div class="team-grid">
+        <div class="team-member">
+            <img src="../Images/student1.jpg" alt="PhD Student 1">
+            <div class="team-info">
+                <h3>Student Name 1</h3>
+                <p class="position">PhD Scholar</p>
+                <p>Research: Thermal remote sensing for drought monitoring</p>
+                <p><a href="mailto:student1@iitb.ac.in">student1@iitb.ac.in</a></p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="../Images/student2.jpg" alt="PhD Student 2">
+            <div class="team-info">
+                <h3>Student Name 2</h3>
+                <p class="position">PhD Scholar</p>
+                <p>Research: Evapotranspiration modeling using satellite data</p>
+                <p><a href="mailto:student2@iitb.ac.in">student2@iitb.ac.in</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <h3>Masters Students</h3>
+    <div class="team-grid">
+        <div class="team-member">
+            <img src="../Images/student3.jpg" alt="Masters Student 1">
+            <div class="team-info">
+                <h3>Student Name 3</h3>
+                <p class="position">MTech Scholar</p>
+                <p>Research: UAV applications in agriculture</p>
+                <p><a href="mailto:student3@iitb.ac.in">student3@iitb.ac.in</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <h3>Alumni</h3>
+    <div class="alumni-section">
+        <h4>PhD</h4>
+        <ul>
+            <li><strong>Dr. Alumni Name</strong> (2022) - "Thesis Title" - Now at: University/Company</li>
+            <!-- More alumni -->
+        </ul>
+        
+        <h4>Masters</h4>
+        <ul>
+            <li><strong>Alumni Name</strong> (2023) - "Thesis Title" - Now at: University/Company</li>
+            <!-- More alumni -->
+        </ul>
+    </div>
+</section>
 
 {% endblock %}

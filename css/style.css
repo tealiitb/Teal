@@ -5,11 +5,12 @@ body {
     padding: 0;
     background-color: #fff; /* White background for viewport */
     color: #000; /* Black text */
+    line-height: 1.6; /* Added line-height for better readability */
 }
 
 /* Header Styling */
 header {
-    background-color: #fff; /* White background */
+    background-color: #008080; /* White background */
     color: #000; /* Black text */
     padding: 1rem;
     display: flex;
@@ -40,6 +41,7 @@ header {
     width: auto;
     max-width: 100%;
     object-fit: contain;
+    border-radius: 10px;
 }
 
 /* Title Styling */
@@ -51,16 +53,15 @@ header {
 }
 
 .lab-title .line1 {
-    color: #000; /* First line black */
+    color: white; /* First line black */
     font-size: 1.6rem;
 }
 
 .lab-title .line2 {
-    color: #000; /* Second line blue */
+    color: white; /* Second line blue */
     font-size: 1.6rem;
 }
 
-/* Ensure navigation bar items have a consistent look */
 /* Navigation Menu */
 .main-nav {
     display: flex;
@@ -71,7 +72,7 @@ header {
 
 /* Style all navigation links and dropdown button */
 .main-nav a, .dropdown .dropbtn {
-    color: black; /* Match text color */
+    color: white; /* Match text color */
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
@@ -94,10 +95,10 @@ section {
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #ddd;
+    background-color: #f5f5f5;
     color: #000;
+    padding: 2rem 0 1rem;
+    margin-top: 2rem;
 }
 
 /* Notification Banner */
@@ -111,13 +112,6 @@ footer {
     border-radius: 5px;
     margin-bottom: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Ensure the dropdown button matches links */
-.dropdown .dropbtn {
-    font-family: inherit;
-    font-size: inherit;
-    text-align: inherit;
 }
 
 /* Dropdown Styling */
@@ -322,31 +316,46 @@ th {
     background: #f9f9f9;
 }
 
+/* Enhanced Theme Styling */
 .theme-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .theme {
     background: white;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 300px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .theme img {
     width: 100%;
     border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
 }
 
 .theme h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
+    margin-top: 15px;
+    font-size: 1.3em;
     color: #000;
+}
+
+.theme p {
+    color: #555;
+    margin: 10px 0 15px;
 }
 
 /* Contact Panel */
@@ -368,6 +377,164 @@ th {
 
 .contact-panel a:hover {
     text-decoration: underline;
+}
+
+/* News Section Styling */
+.news-section {
+    padding: 2rem;
+    margin: 1rem auto;
+    background-color: #fff;
+    border-radius: 5px;
+    max-width: 85%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-item {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #000;
+}
+
+.news-date {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+.news-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: #000;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Publications Highlight Section */
+.publications-highlight {
+    padding: 2rem;
+    margin: 1rem auto;
+    background-color: #fff;
+    border-radius: 5px;
+    max-width: 85%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced Footer */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+/* Team Members Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.team-member {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.team-info {
+    padding: 15px;
 }
 
 /* Responsive Adjustments */
@@ -396,5 +563,23 @@ th {
     .main-nav a {
         display: block;
         margin: 5px 0;
+    }
+
+    .news-section, .publications-highlight {
+        padding: 1.5rem;
+        max-width: 95%;
+    }
+    
+    .theme-container {
+        gap: 20px;
+    }
+    
+    .theme {
+        max-width: 100%;
+    }
+
+    .footer-section {
+        flex: 100%;
+        text-align: center;
     }
 }
